@@ -212,7 +212,7 @@ memória (os nomes das variáveis originais serão mantidas):
  Reproduza “total”
 ----
 
-(((loop)))(((pular)))(((exemplo de soma)))Agora ficou bem fácil de
+(((laço)))(((pular)))(((exemplo de soma)))Agora ficou bem fácil de
 ver como o programa funciona. Você entendeu? As duas primeiras
 linhas gravam nas posições da memória um valor inicial: `total` será
 usado para montar o resultado da computação, e `count` mantém o
@@ -239,3 +239,59 @@ while (count <= 10) {
 console.log(total);
 // → 55
 ----
+
+(((laço while)))(((laço)))Essa versão apresenta algumas melhorias. A mais
+importante delas, é que não é mais necessário especificar a maneira que o
+programa pula de trás pra frente. A construção da linguagem `while` toma
+conta de fazer isso por nós. Ela vai continuar executando o bloco
+(envolvido em chaves) enquanto a condição que foi dada permanecer verdadeira.
+Essa condição é `count <= 10`, o que significa que “count é menor ou igual a
+10”. Nós não temos mais que criar um valor temporário e compará-lo a 0, o que
+era um detalhe incômodo. Parte do poder das linguagens de programção é que elas
+tomam conta desses detalhes incômodos por nós.
+
+(((console.log)))No final do programa que escrevemos, depois de finalizado o
+`while`, a operação `console.log`é aplicada para que o resultado seja escrito
+na saída do programa.
+
+(((função soma)))(((função
+coleção)))(((abstração)))(((função)))Finalmente, aqui está o que o nosso programa
+poderia ser se nós tivéssemos as operações `coleção` e `soma` disponíveis, as quais
+respectivamente, cria uma ((coleção)) de números num determinado alcançe e
+calcula a soma dessa coleção:
+
+// start_code
+
+[source,javascript]
+----
+console.log(soma(range(1, 10)));
+// → 55
+----
+
+(((legibilidade)))A moral da história é que o mesmo programa pode ser
+escrito de diversas maneiras, em expressões longas, curtas, legíveis
+ou não legíveis. A primeira versão do nosso programa era extremamente
+obscura, enquanto que a última versão é quase somente Português básico:
+`log` a `soma` da `coleção` de números de 1 a 10. (Nós vamos ver nos
+link:04_dados.html#dados[próximos capítulos] como construir operações
+como `soma` e `coleção`.)
+
+(((linguagem de programação,o poder da)))(((composability)))Uma boa linguagem
+de programação ajuda os programadores permitindo que eles falem sobre
+as ações que o computador tem que tomar numa camada superficial.
+Isso ajuda a omitir muitos detalhes desinsteressantes, provendo construção
+de blocos convenientes (como por exemplo `while` e `console.log`), permitindo
+que você defina seus próprios blocos (como `soma` e `coleção`), e fazendo com
+que esses blocos sejam de fáceis de compor.
+
+== O que é JavaScript? ==
+
+indexsee:[WWW,World Wide Web] indexsee:[Web,World Wide Web](((hitória)))(((Netscape)))(((navagador)))(((aplicação web)))(((JavaScript)))(((JavaScript,história do)))(((World Wide
+Web))) JavaScript foi introduzido em 1995 como uma maneira de
+adicionar programas a páginas web no navegador Netscape. Desde
+então  a linguagem vem sendo adotada por todos os principais
+navegadores web gráficos. Isso tornou possível modernas
+ãplicações web, aplicações nas quais você pode interagir
+diretamente, sem recarregar a página a cada ação. Mas isso
+também é usado nos websites tradicionais para prover várias
+formas de interatividade e inteligência.
