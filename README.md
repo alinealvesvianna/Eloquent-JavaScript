@@ -1,23 +1,23 @@
-# Eloquent JavaScript
+# JavaScript Expressivo
 
-These are the sources used to build the second edition of Eloquent
-JavaScript (http://eloquentjavascript.net).
+Neste repositório você encontrará os recursos usados para construir
+a segunda edição do JavaScript Expressivo (http://eloquentjavascript.net).
 
-Feedback welcome, in the form of issues and pull requests.
+Comentários são bem vindos, na forma de issues e pull requests.
 
-## Building
+## Montando
 
     npm install --production
     apt-get install asciidoc inkscape
     make html
 
-For OSX, you can use port or brew to install the asciidoc package.
+Para OSX, você pode usar port ou brew para instalar o pacote asciidoc.
 
-To build the PDF file:
+Para montar o arquivo PDF:
 
     apt-get install texlive texlive-xetex texlive-fonts-extra
     make book.pdf
 
-To build the ePub book:
+Para montar o livro em ePub:
 
     make book.epub
