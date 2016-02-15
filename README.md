@@ -1,5 +1,7 @@
 # JavaScript Expressivo
 
+#### [DEPRECATED] [por outra versão traduzida](https://github.com/braziljs/eloquente-javascript/).
+
 > **Mantenedor:** [Joao Stein](https://github.com/joaostein)
 
 Neste repositório você encontrará os recursos usados para construir
