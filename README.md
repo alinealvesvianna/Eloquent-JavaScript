@@ -1,7 +1,5 @@
 # JavaScript Expressivo
 
-> **Mantenedor:** [Joao Stein](https://github.com/joaostein)
-
 Neste repositório você encontrará os recursos usados para construir
 a segunda edição do JavaScript Expressivo (http://eloquentjavascript.net).
 
